@@ -172,15 +172,21 @@ export const PrimarySearchAppBar = () => {
         onClose={handleBorgerMenuClose}
       >
         <MenuItem onClick={handleBorgerMenuClose}>
-          <NavLink to={"/"}>Home</NavLink>
+          <NavLink to={"/"}>
+            <p>Home</p>
+          </NavLink>
         </MenuItem>
 
         <NavLink onClick={handleBorgerMenuClose} to={"/search"}>
-          <MenuItem>Search</MenuItem>
+          <MenuItem>
+            <p>Search</p>
+          </MenuItem>
         </NavLink>
 
         <MenuItem onClick={handleBorgerMenuClose}>
-          <NavLink to={"/about"}>About</NavLink>
+          <NavLink to={"/about"}>
+            <p>About</p>
+          </NavLink>
         </MenuItem>
       </Menu>
       <AppBar position="static">
