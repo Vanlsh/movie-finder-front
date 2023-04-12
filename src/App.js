@@ -1,7 +1,17 @@
-import "./App.css";
+import { createBrowserRouter } from "react-router-dom";
+import { Home, About, Search } from "./page";
 
-function App() {
-  return <div className="App">Hello World</div>;
-}
-
-export default App;
+export const router = createBrowserRouter([
+  {
+    path: "/home",
+    element: Home,
+  },
+  {
+    path: "/search",
+    element: Search,
+  },
+  {
+    path: "/about",
+    element: About,
+  },
+]);
